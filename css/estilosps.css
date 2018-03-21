@@ -22,6 +22,8 @@ body{
 		animation: slidein 2s;
 	}
 
+	/*no me aplicaba el web-kit en el keyframes, no funciono aplicandolo de la siguiente manera "@web-kit-Keyframes"*/
+
 @keyframes slidein {
  		0%{
 				margin-top:150%;
@@ -51,12 +53,15 @@ h1{
 }
 
 #ps1 {
+	-web-kit-filter:blur(1px);
 	filter:blur(1px);
 	}
 #ps2,#ps4,#ps6 {
+	-web-kit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	}
 #ps3 {
+	-web-kit-filter:sepia(90%);
 	filter:sepia(90%);
 	}
 
@@ -65,6 +70,7 @@ h1{
 	padding:10px;
 	margin:0 auto;
 	border:5px;
+	-web-kit-filter: drop-shadow(2px 2px 7px #02010a);
 	filter: drop-shadow(2px 2px 7px #02010a);
 }
 
