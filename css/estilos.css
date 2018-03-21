@@ -24,6 +24,7 @@ body{
 	flex-direction: column;
 	animation: slidein 2s;
 }
+/*no me aplicaba el web-kit en el keyframes, no funciono aplicandolo de la siguiente manera "@web-kit-Keyframes" o "@-web-kit-keyframnes"*/
 
 @keyframes slidein {
  		0%{
